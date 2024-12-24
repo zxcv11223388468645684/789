@@ -1,0 +1,125 @@
+/* 基本樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* 滾動視差樣式 */
+.parallax-header,
+.parallax-footer,
+.parallax-section {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #666;
+}
+
+.parallax-footer {
+    background-image: url('../img/第一章.jpg');
+}
+
+/* 滾動視差內的文字 */
+.parallax-section .content {
+    color: white;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px;
+
+}
+
+.parallax-section .content h2 {
+    font-size: 2.5em;
+    margin: 0 0 10px;
+}
+
+.parallax-section .content p {
+    font-size: 1.2em;
+}
+
+/* 角色卡片 */
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.character {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.character img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.character h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.character p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* AOS 動畫 */
+[data-aos] {
+    transition: all 0.6s ease;
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+    padding:0;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none;
+    color: #ec6a43;
+    margin: 0;
+    font-size: 1.5em;
+    color: #ec6a43;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background-color: #333;
+  }
+  
+  a:visited {
+    color: #ec6a43;
+  }  
